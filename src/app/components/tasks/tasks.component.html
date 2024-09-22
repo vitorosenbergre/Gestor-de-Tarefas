@@ -1,0 +1,8 @@
+
+<!-- Componente para adicionar uma nova tarefa -->
+
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+
+<!-- Lista de itens de tarefa, iterando sobre o array de tarefas -->
+
+<app-task-item *ngFor="let tarefa of tarefas" [tarefa]="tarefa" (onDeleteTask)="deleteTask($event)" (onToggleConcluido)="toggleConcluido($event)"></app-task-item>

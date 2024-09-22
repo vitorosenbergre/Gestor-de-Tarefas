@@ -1,0 +1,21 @@
+<!-- Div que representa uma tarefa individual -->
+
+<!-- Linha 15 -> Evento de duplo clique que chama o método onToggle, passando a tarefa atual -->
+
+<!-- Linha 16 -> Aplica a classe 'reminder' se a tarefa estiver concluída -->
+
+<!-- Linha 17 -> Exibe o texto da tarefa -->
+
+<!-- Linha 18 -> Ícone para deletar a tarefa -->
+
+<!-- Linha 20 -> Exibe a categoria da tarefa -->
+
+
+<div class="task"
+    (dblclick)="onToggle(tarefa)" 
+    [ngClass]="{reminder: tarefa.concluido}">
+    <h3> {{ tarefa.tarefa}}
+        <fa-icon [icon] = "faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(tarefa)" ></fa-icon>
+    </h3>
+    <p> {{ tarefa.categoria}}</p>
+</div> 

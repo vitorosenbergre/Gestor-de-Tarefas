@@ -1,27 +1,41 @@
-# ProjetoAngular
+# Gestor de Tarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+## Descrição do Projeto
 
-## Development server
+O **Gestor de Tarefas** é uma aplicação web que permite aos usuários gerenciar suas tarefas diárias de forma simples e eficiente. Com uma interface amigável, os usuários podem adicionar novas tarefas, marcá-las como concluídas ou excluí-las conforme necessário. A aplicação utiliza um design responsivo, garantindo uma boa experiência em diferentes dispositivos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instruções para Executar a Aplicação
 
-## Code scaffolding
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/gestor-de-tarefas.git
+   cd gestor-de-tarefas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. **Instale as dependências:** Certifique-se de ter o Node.js e o npm instalados. Em seguida, execute:
+    ```bash
+    npm install
 
-## Build
+2. **Execute a aplicação:** Para iniciar o servidor de desenvolvimento, execute:
+    ```bash
+    ng serve --open
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    A aplicação será aberta no seu navegador padrão em http://localhost:4200.
 
-## Running unit tests
+## Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Angular: Framework para construção de aplicações web dinâmicas.
+- TypeScript: Linguagem que adiciona tipagem ao JavaScript.
+- Angular Material: Biblioteca de componentes UI para uma interface moderna.
+- HTML/CSS: Para a estrutura e estilo da aplicação.
+- Node.js e Express: Para o backend (opcional) se necessário para integração com a API.
+- RxJS: Para manipulação de dados assíncronos.
+- Json-server para simular a troca de dados com uma api
 
-## Running end-to-end tests
+## Possíveis Melhorias Futuras
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Autenticação de Usuário: Implementar autenticação para permitir que os usuários salvem suas tarefas em uma conta.
+- Persistência de Dados: Integrar um banco de dados para armazenar tarefas, utilizando MongoDB ou Firebase.
+- Notificações: Adicionar notificações para lembrar os usuários sobre tarefas pendentes.
+- Filtros e Categorias: Permitir que os usuários filtrem tarefas por categoria ou status (concluída/pendente).
+- Melhorias de Design: Refinar a interface do usuário com mais opções de personalização e temas.
+- Testes Automatizados: Implementar testes unitários e de integração para garantir a robustez da aplicação.

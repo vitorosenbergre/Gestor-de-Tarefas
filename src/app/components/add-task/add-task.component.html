@@ -1,0 +1,32 @@
+<!-- Condicional para mostrar o botão correto -->
+@if (mostrarAddTarefa) {
+    <!-- Botão para fechar a visualização de adicionar tarefa -->
+    <app-button text="Fechar" color="red" (btnClick)="AlteraVisualizacao(false)"></app-button>
+}@else {
+    <!-- Botão para abrir a visualização de adicionar tarefa -->
+    <app-button text="Adicionar Tarefa" color="green" (btnClick)="AlteraVisualizacao(true)"></app-button>
+}
+
+<!-- Formulário para adicionar tarefa, exibido quando mostrarAddTarefa é verdadeiro -->
+<form (ngSubmit)="onSubmit()" class="add-form" *ngIf="mostrarAddTarefa">
+    <div>
+        <label for="text">Tarefa:</label>
+        <!-- Campo de entrada para a tarefa, com vinculação bidirecional -->
+        <input type="text" name="text" class="form-control" placeholder="Adicionar Tarefa" id="text" [(ngModel)]="tarefa">
+    </div>
+
+    <div class="mb-4">
+        <label class="space" for="categoria">Categoria:</label>
+        <!-- Seleção de categoria com vinculação bidirecional -->
+        <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
+            <option value="Casa">Casa</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Faculdade">Faculdade</option>
+            <option value="Academia">Academia</option>
+            <option value="Lazer">Lazer</option>
+        </select>
+    </div>
+
+    <!-- Botão para enviar o formulário -->
+    <input type="submit" value="Enviar Tarefa" class="btn btn-block mb-4">
+</form>

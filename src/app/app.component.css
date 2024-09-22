@@ -1,0 +1,30 @@
+.icon{
+    margin-right: 8px; 
+}
+
+.example-spacer {
+    margin-right: 10px; 
+}
+
+mat-toolbar {
+    display: flex;
+    align-items: center;
+}
+
+mat-card {
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    display: flex;
+    max-width: 900px;
+    overflow: auto;
+    min-height: 200px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+mat-card-content p {
+    font-size: 16px; 
+    margin: 10px 0; 
+    color: #333; 
+}
