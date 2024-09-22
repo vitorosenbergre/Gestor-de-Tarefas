@@ -19,7 +19,7 @@ O **Gestor de Tarefas** é uma aplicação web que permite aos usuários gerenci
     ```bash
     ng serve --open
 
-    A aplicação será aberta no seu navegador padrão em http://localhost:4200.
+ A aplicação será aberta no seu navegador padrão em http://localhost:4200.
 
 ## Tecnologias Utilizadas
 
