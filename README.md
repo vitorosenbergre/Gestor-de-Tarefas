@@ -29,7 +29,7 @@ O **Gestor de Tarefas** é uma aplicação web que permite aos usuários gerenci
 - HTML/CSS: Para a estrutura e estilo da aplicação.
 - Node.js e Express: Para o backend (opcional) se necessário para integração com a API.
 - RxJS: Para manipulação de dados assíncronos.
-- Json-server para simular a troca de dados com uma api
+- Json-server: Para simular a troca de dados com uma API.
 
 ## Possíveis Melhorias Futuras
 
@@ -39,3 +39,4 @@ O **Gestor de Tarefas** é uma aplicação web que permite aos usuários gerenci
 - Filtros e Categorias: Permitir que os usuários filtrem tarefas por categoria ou status (concluída/pendente).
 - Melhorias de Design: Refinar a interface do usuário com mais opções de personalização e temas.
 - Testes Automatizados: Implementar testes unitários e de integração para garantir a robustez da aplicação.
+
